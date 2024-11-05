@@ -14,9 +14,9 @@ Este portfólio foi desenvolvido utilizando:
 - **JavaScript** para interatividade.
 - **React** para a criação de componentes reutilizáveis e escaláveis.
 
-## Visualização
+<!-- ## Visualização
 
-Você pode visualizar o site acessando o link: [Meu Portfólio](https://meusite.com) (substitua com o link real do seu site, se já estiver hospedado).
+Você pode visualizar o site acessando o link: [Meu Portfólio](https://meusite.com) (substitua com o link real do seu site, se já estiver hospedado). -->
 
 ## Contato
 
