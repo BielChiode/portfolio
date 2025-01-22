@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, Box } from '@mui/material';
+import React from "react";
+import { Typography, Box } from "@mui/material";
 
 export default function Sobre() {
   return (
@@ -8,13 +8,20 @@ export default function Sobre() {
         About me
       </Typography>
       <Typography variant="body1">
-        Skilled Front-End Developer with 4+ years of experience in building web
-        and mobile applications. Proficient in ReactJS, NextJS, React Native,
-        and Figma. Expert in GitLab CI/CD for optimizing deployments and
-        enhancing user experiences. Strong in full-stack development with PHP
-        and NodeJs for microservices and API integration. Adept at managing
-        Linux environments and ensuring smooth deployments. Collaborative team
-        player experienced in Agile (Scrum, Kanban, XP) methodologies.
+        Front-End Engineer with 5+ years of experience in developing
+        high-performance web and mobile applications. Proficient in ReactJS,
+        NextJS, and React Native, with solid experience in design and
+        prototyping using Figma. Specialist in CI/CD with GitLab, optimizing
+        deployment workflows and enhancing user experiences.
+        <br />
+        Knowledge in full-stack development with PHP and Node.js for
+        microservices and robust API integrations. Experience in implementing
+        PL/SQL solutions, including integrations with APIs. Advanced skills in
+        Linux and Windows administration, ensuring efficient and stable
+        deployments.
+        <br />
+        Effective collaborator in multidisciplinary teams, with experience in
+        agile methodologies (Scrum, Kanban, XP).
       </Typography>
     </Box>
   );

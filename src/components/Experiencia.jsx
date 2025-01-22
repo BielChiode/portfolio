@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Typography,
   Box,
@@ -6,7 +6,8 @@ import {
   ListItem,
   ListItemText,
   IconButton,
-} from '@mui/material';
+  Divider,
+} from "@mui/material";
 import {
   Javascript,
   Html5,
@@ -15,18 +16,18 @@ import {
   Php,
   GitHub,
   ReactLogo,
-} from '@mui/icons-material'; // Exemplo com ícones Material UI
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
-import PhpIcon from '@mui/icons-material/Php';
+} from "@mui/icons-material"; // Exemplo com ícones Material UI
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
+import PhpIcon from "@mui/icons-material/Php";
 
 export default function Experiencia() {
   const technologies = [
-    { name: 'HTML', icon: <HtmlIcon /> },
-    { name: 'CSS', icon: <CssIcon /> },
-    { name: 'JavaScript', icon: <JavascriptIcon /> },
-    { name: 'PHP', icon: <PhpIcon /> },
+    { name: "HTML", icon: <HtmlIcon /> },
+    { name: "CSS", icon: <CssIcon /> },
+    { name: "JavaScript", icon: <JavascriptIcon /> },
+    { name: "PHP", icon: <PhpIcon /> },
     // { name: 'ReactJs', icon: <ReactLogo /> },
     // { name: 'NextJs', icon: <Typography>Next.js</Typography> },
     // { name: 'React Native', icon: <ReactLogo /> },
@@ -51,8 +52,79 @@ export default function Experiencia() {
         <ListItem>
           <Box>
             <Typography gutterBottom fontWeight={700}>
-              Front End Engineer - Pandora Solutions (Feb 2020 - Present)
+              Software Engineer -{" "}
+              <Box
+                as="span"
+                sx={{
+                  cursor: "pointer",
+                  "&:hover": {
+                    color: "primary.main",
+                  },
+                }}
+                onClick={() =>
+                  window.open("https://www.gruponos.com/", "_blank")
+                }
+              >
+                Grupo nós
+              </Box>{" "}
+              (Nov 2024 - Present)
             </Typography>
+            <Typography
+              sx={(theme) => ({ color: theme.palette.secondary.main })}
+              gutterBottom
+            >
+              • Developed a PL/SQL procedure to integrate time tracking with
+              APIs, ensuring real-time updates on employee presence in stores.
+              The solution automated the process, improved data accuracy, and
+              enhanced monitoring, directly impacting workforce management
+              efficiency.
+            </Typography>
+            <Typography>
+              Tecnologies used: ReactJs, NextJs, Typescript, JavaScipt, Jest,
+              Cypress, Oracle Cloud, Oracle database, PL/SQL, HTML, CSS, Docker,
+              Material UI; Active experience with agile methodologies (Scrum,
+              Kanban, XP)
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
+            >
+              {technologies.map((tech, index) => (
+                <IconButton
+                  key={index}
+                  sx={{ display: "flex", flexDirection: "column" }}
+                >
+                  {tech.icon}
+                  <Typography variant="caption">{tech.name}</Typography>
+                </IconButton>
+              ))}
+            </Box>
+          </Box>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <Box>
+            <Typography gutterBottom fontWeight={700}>
+              Front End Engineer -{" "}
+              <Box
+                as="span"
+                sx={{
+                  cursor: "pointer",
+                  "&:hover": {
+                    color: "primary.main",
+                  },
+                }}
+                onClick={() => window.open("https://pandora.com.br/", "_blank")}
+              >
+                Pandora solutions
+              </Box>{" "}
+              (Feb 2020 - Present)
+            </Typography>
+
             <Typography
               sx={(theme) => ({ color: theme.palette.secondary.main })}
               gutterBottom
@@ -94,16 +166,16 @@ export default function Experiencia() {
             </Typography>
             <Box
               sx={{
-                display: 'flex',
+                display: "flex",
                 gap: 2,
-                flexWrap: 'wrap',
-                alignItems: 'center',
+                flexWrap: "wrap",
+                alignItems: "center",
               }}
             >
               {technologies.map((tech, index) => (
                 <IconButton
                   key={index}
-                  sx={{ display: 'flex', flexDirection: 'column' }}
+                  sx={{ display: "flex", flexDirection: "column" }}
                 >
                   {tech.icon}
                   <Typography variant="caption">{tech.name}</Typography>
@@ -112,6 +184,7 @@ export default function Experiencia() {
             </Box>
           </Box>
         </ListItem>
+
         {/* <ListItem>
           <ListItemText
             primary="Desenvolvedor Web - XYZ Corp"

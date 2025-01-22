@@ -3,19 +3,19 @@ import { Typography, Box, Button } from '@mui/material';
 
 export default function Contato() {
   return (
-    <Box mt={4} textAlign="center">
+    <Box mt={4} mb={2} textAlign="center">
       <Typography variant="h4" gutterBottom>
-        Entre em Contato
+        Get in Touch
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Gostou do meu trabalho? Vamos conversar!
+        Got interested ? Let's have a call.
       </Typography>
       <Button
         variant="contained"
         color="primary"
         href="mailto:seuemail@email.com"
       >
-        Fale Comigo
+        Contact Me
       </Button>
     </Box>
   );
