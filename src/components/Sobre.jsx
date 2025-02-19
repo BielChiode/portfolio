@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
+import ScrollTecnologias from "./ScrollTecnologias";
 
 export default function Sobre() {
   return (
@@ -23,6 +24,9 @@ export default function Sobre() {
         Effective collaborator in multidisciplinary teams, with experience in
         agile methodologies (Scrum, Kanban, XP).
       </Typography>
+      <Box mt={1}>
+        <ScrollTecnologias />
+      </Box>
     </Box>
   );
 }
