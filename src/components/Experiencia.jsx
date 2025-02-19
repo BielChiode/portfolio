@@ -7,7 +7,17 @@ import {
   ListItemText,
   Divider,
   Collapse,
+  Fade,
 } from "@mui/material";
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineSeparator,
+} from "@mui/lab";
+import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 
 export default function Experiencia() {
   const [openGrupoNos, setOpenGrupoNos] = useState(false);
@@ -135,6 +145,48 @@ export default function Experiencia() {
                 Docker, Expo, PHP, AWS, Material UI; Active experience with
                 agile methodologies (Scrum, Kanban, XP)
               </Typography>
+              <Fade in={openPandora}>
+                <Box mt={2}>
+                  <Typography fontWeight={700}>
+                    Career Progression 🚀
+                  </Typography>
+                  <Timeline position="alternate-reverse">
+                    {[
+                      {
+                        title: "Intern in Systems Analysis and Development",
+                        date: "Feb 2020 - Feb 2022",
+                      },
+                      {
+                        title: "Entry-Level Front End Developer",
+                        date: "Feb 2022 - July 2022",
+                      },
+                      {
+                        title: "Junior Front End Developer",
+                        date: "July 2022 - July 2023",
+                      },
+                      {
+                        title: "Mid Front End Developer",
+                        date: "July 2023 - Present",
+                      },
+                    ].map((item, index) => (
+                      <TimelineItem key={index}>
+                        <TimelineSeparator>
+                          <TimelineDot color="primary">
+                            <WorkOutlineIcon />
+                          </TimelineDot>
+                          {index !== 3 && <TimelineConnector />}
+                        </TimelineSeparator>
+                        <TimelineContent>
+                          <Typography fontWeight={600}>{item.title}</Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            {item.date}
+                          </Typography>
+                        </TimelineContent>
+                      </TimelineItem>
+                    ))}
+                  </Timeline>
+                </Box>
+              </Fade>
             </Collapse>
           </Box>
         </ListItem>

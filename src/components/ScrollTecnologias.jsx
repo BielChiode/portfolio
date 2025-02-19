@@ -7,6 +7,7 @@ const technologies = [
   "expo",
   "nextjs",
   "typeScript",
+  "figma",
   "materialUI",
   "tailwindcss",
   "jest",
