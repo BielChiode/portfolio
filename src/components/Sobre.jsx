@@ -4,7 +4,7 @@ import ScrollTecnologias from "./ScrollTecnologias";
 
 export default function Sobre() {
   return (
-    <Box mt={4}>
+    <Box mt={4} id="about">
       <Typography variant="h4" gutterBottom>
         About Me
       </Typography>

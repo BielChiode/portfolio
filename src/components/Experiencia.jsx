@@ -8,6 +8,7 @@ import {
   Divider,
   Collapse,
   Fade,
+  IconButton,
 } from "@mui/material";
 import {
   Timeline,
@@ -18,13 +19,14 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function Experiencia() {
   const [openGrupoNos, setOpenGrupoNos] = useState(false);
   const [openPandora, setOpenPandora] = useState(false);
 
   return (
-    <Box mt={4}>
+    <Box mt={4} id="experience">
       <Typography variant="h4" gutterBottom>
         Experience
       </Typography>
@@ -40,7 +42,18 @@ export default function Experiencia() {
               <Typography fontWeight={700} color="primary.contrastText">
                 Software Engineer
               </Typography>
-              <Typography>(Nov 2024 - Present)</Typography>
+              <Box display="flex" alignItems="center">
+                <Typography>(Nov 2024 - Present)</Typography>
+                <IconButton
+                  size="small"
+                  sx={{
+                    transition: "transform 0.3s",
+                    transform: openGrupoNos ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Box>
             </Box>
             <Typography
               sx={{
@@ -87,7 +100,18 @@ export default function Experiencia() {
               <Typography fontWeight={700} color="primary.contrastText">
                 Front End Engineer
               </Typography>
-              <Typography>(Feb 2020 - Nov 2024)</Typography>
+              <Box display="flex" alignItems="center">
+                <Typography>(Feb 2020 - Nov 2024)</Typography>
+                <IconButton
+                  size="small"
+                  sx={{
+                    transition: "transform 0.3s",
+                    transform: openPandora ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Box>
             </Box>
             <Typography
               sx={{
@@ -161,11 +185,11 @@ export default function Experiencia() {
                         date: "Feb 2022 - July 2022",
                       },
                       {
-                        title: "Junior Front End Developer",
+                        title: "Junior Front End Engineer",
                         date: "July 2022 - July 2023",
                       },
                       {
-                        title: "Mid Front End Developer",
+                        title: "Mid Front End Engineer",
                         date: "July 2023 - Present",
                       },
                     ].map((item, index) => (

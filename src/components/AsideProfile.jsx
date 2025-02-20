@@ -22,6 +22,10 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 }));
 
 export default function AsideProfile() {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Container
       sx={{
@@ -63,6 +67,7 @@ export default function AsideProfile() {
           {["About", "Experience", "Projects"].map((item, index) => (
             <Box
               key={index}
+              onClick={() => scrollToSection(item.toLowerCase())}
               sx={{
                 display: "flex",
                 alignItems: "center",
