@@ -4,6 +4,7 @@ import AsideProfile from "../components/AsideProfile";
 import Sobre from "../components/Sobre";
 import Experiencia from "../components/Experiencia";
 import Contato from "../components/Contato";
+import Projetos from "../components/Projetos";
 
 function Home() {
   return (
@@ -29,16 +30,10 @@ function Home() {
           })}
         >
           <Container>
-            <Box id="sobre">
-              <Sobre />
-            </Box>
-            <Box id="experiencia">
-              <Experiencia />
-            </Box>
-            {/* <Projetos /> */}
-            <Box id="contato">
-              <Contato />
-            </Box>
+            <Sobre />
+            <Experiencia />
+            <Projetos />
+            <Contato />
           </Container>
         </Box>
       </Grid2>
