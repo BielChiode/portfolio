@@ -35,9 +35,9 @@ export default function Sobre() {
         Education 🎓
       </Typography>
       <Typography variant="body1">
-        📌 <b>Bachelor’s Degree in Information Systems</b> – FIAP
-        <br />
         📌 <b>MBA in Software Engineering</b> – FIAP
+        <br />
+        📌 <b>Bachelor’s Degree in Information Systems</b> – FIAP
       </Typography>
       <Divider sx={{ my: 2 }} />
       <ScrollTecnologias />

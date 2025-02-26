@@ -40,7 +40,7 @@ export default function Projetos() {
   return (
     <Box mt={4} id="projects">
       <Typography variant="h4" gutterBottom>
-        Projetos
+        Projects
       </Typography>
       <Grid container spacing={4} mt={5}>
         {listaProjetos.map((projeto, index) => (
