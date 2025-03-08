@@ -1,31 +1,31 @@
-# Meu Portfólio
+# My Portfolio
 
-Bem-vindo ao meu portfólio! Este site apresenta um pouco sobre mim, minhas experiências e as formas de contato.
+Welcome to my portfolio! This website showcases a little about me, my experiences, and ways to contact me.
 
-## Sobre Mim
+## About Me
 
-Sou um desenvolvedor front-end com foco em criar experiências interativas e funcionais. Minha paixão por tecnologia e design me impulsiona a desenvolver soluções criativas que combinam usabilidade com estética.
+I am a front-end developer focused on creating interactive and functional experiences. My passion for technology and design drives me to develop creative solutions that combine usability with aesthetics.
 
-## Tecnologias Utilizadas Nesse Projeto
+## Technologies Used in This Project
 
-Este portfólio foi desenvolvido utilizando:
+This portfolio was developed using:
 
-- **Material UI** para a estilização e o design básico.
-- **JavaScript** para interatividade.
-- **React** para a criação de componentes reutilizáveis e escaláveis.
+- **Material UI** for styling and basic design.
+- **JavaScript** for interactivity.
+- **React** for creating reusable and scalable components.
 
-<!-- ## Visualização
+<!-- ## Preview
 
-Você pode visualizar o site acessando o link: [Meu Portfólio](https://meusite.com) (substitua com o link real do seu site, se já estiver hospedado). -->
+You can view the website by accessing the link: [My Portfolio](https://meusite.com) (replace with the actual link if already hosted). -->
 
-## Contato
+## Contact
 
-Fique à vontade para entrar em contato comigo através dos seguintes meios:
+Feel free to reach out to me through the following channels:
 
 - **Email:** gabrielchioode@gmail.com
-- **LinkedIn:** [Meu LinkedIn](https://www.linkedin.com/in/gabriel-chiode-589554157/)
-- **GitHub:** [Meu GitHub](https://github.com/BielChiode)
+- **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/gabriel-chiode-589554157/)
+- **GitHub:** [My GitHub](https://github.com/BielChiode)
 
 ---
 
-Obrigado por visitar meu portfólio!
+Thank you for visiting my portfolio!

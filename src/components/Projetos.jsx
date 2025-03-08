@@ -31,10 +31,10 @@ export default function Projetos() {
         "Presentation and portfolio website for a scenography company.",
       link: "https://2goceno.com/",
     },
-    {
-      titulo: "Dashboard de Estatísticas",
-      descricao: "Sistema de visualização de dados usando Recharts.",
-    },
+    // {
+    //   titulo: "Dashboard de Estatísticas",
+    //   descricao: "Sistema de visualização de dados usando Recharts.",
+    // },
   ];
 
   return (
