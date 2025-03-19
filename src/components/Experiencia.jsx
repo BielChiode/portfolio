@@ -77,6 +77,11 @@ export default function Experiencia() {
                 The solution automated the process, improved data accuracy, and
                 enhanced monitoring, directly impacting workforce management
                 efficiency.
+                <br />• Led the implementation of an identity and access
+                management system, enabling seamless integration between
+                multiple enterprise platforms with Single Sign-On (SSO). This
+                solution improved security, simplified authentication and
+                enhanced access control.
               </Typography>
               <Typography>
                 Tecnologies used: ReactJs, NextJs, Typescript, JavaScript, Jest,
