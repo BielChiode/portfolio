@@ -4,7 +4,6 @@ import {
   Box,
   List,
   ListItem,
-  ListItemText,
   Divider,
   Collapse,
   Fade,

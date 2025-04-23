@@ -10,23 +10,29 @@ export default function Projetos() {
       descricao:
         "A web application for real-time cryptocurrency price monitoring using the Binance API. The project allows users to view quotes for different currencies in a user-friendly and responsive interface.",
       link: "https://github.com/BielChiode/crypto-watchlist",
+      height: 500,
     },
     {
       titulo: "Hit or Stand Game",
       descricao:
         "This is a blackjack (21) game app, developed with React Native and Expo. The goal of the game is to add cards for the player and the dealer, accumulating points according to the game rules.",
       link: "https://github.com/BielChiode/HitOrStand",
+      height: 500,
     },
     {
       titulo: "2GO Ceno Website",
       descricao:
         "Presentation and portfolio website for a scenography company.",
       link: "https://2goceno.com/",
+      height: 300,
     },
-    // {
-    //   titulo: "Dashboard de Estatísticas",
-    //   descricao: "Sistema de visualização de dados usando Recharts.",
-    // },
+    {
+      titulo: "Rick and Morty Wiki",
+      descricao:
+        "Rick and Morty Wiki é uma aplicação web desenvolvida com React, TypeScript e Vite que consome a API oficial de Rick and Morty para oferecer um guia completo da série. No projeto é possível explorar personagens, descobrir localizações, e consultar episódios com listagem e informações detalhadas. A interface responsiva adota um estilo futurista inspirado em glassmorphism e neon sutil usando as cores do tema, demonstrando integração com APIs públicas, otimização de performance e design moderno com Material-UI.",
+      link: "https://rick-and-morty-app-steel-six.vercel.app/",
+      height: 820,
+    },
   ];
 
   return (
@@ -35,23 +41,28 @@ export default function Projetos() {
         Projects
       </Typography>
       <Grid container spacing={4} mt={5}>
-        {listaProjetos.map((projeto, index) => (
-          <Grid item size={{ xs: 12, sm: 6, md: 6 }} key={index}>
-            <CardStyled
-              titulo={projeto.titulo}
-              descricao={projeto.descricao}
-              link={projeto.link}
-            />
-          </Grid>
-        ))}
+        {listaProjetos.map((projeto, index) => {
+          const altura = projeto.height;
+
+          return (
+            <Grid item size={{ xs: 12, sm: 6, md: 6 }} key={index}>
+              <CardStyled
+                titulo={projeto.titulo}
+                descricao={projeto.descricao}
+                link={projeto.link}
+                height={altura}
+              />
+            </Grid>
+          );
+        })}
       </Grid>
     </Box>
   );
 }
 
-const CardStyled = ({ titulo, descricao, imagem, link }) => {
+const CardStyled = ({ titulo, descricao, imagem, link, height }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper height={height}>
       <div className="card">
         <div className="align">
           <span className="red" />
@@ -97,7 +108,7 @@ const StyledWrapper = styled.div`
   }
 
   .card:hover {
-    height: 500px;
+    height: ${({ height }) => height}px;
     transform: skew(0deg);
   }
 
