@@ -13,7 +13,7 @@ export default function Contato() {
       <Button
         variant="contained"
         color="primary"
-        href="mailto:seuemail@email.com"
+        href="mailto:gabrielchioode@gmail.com"
       >
         Contact Me
       </Button>

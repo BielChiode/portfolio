@@ -57,7 +57,7 @@ export default function AsideProfile() {
           </Typography>
         </Box>
         <Typography variant="h6" color="secondary.main" gutterBottom>
-          Frontend Engineer
+          Frontend / Mobile Engineer
         </Typography>
         <Typography sx={{ mt: 2, color: "text.primary" }}>
           I build intuitive, responsive and efficient user interfaces.
