@@ -71,20 +71,31 @@ export default function Experiencia() {
                 sx={(theme) => ({ color: theme.palette.secondary.main, mt: 1 })}
                 gutterBottom
               >
-                • Developed a PL/SQL procedure to integrate time tracking with
-                APIs, ensuring real-time updates on employee presence in stores.
-                The solution automated the process, improved data accuracy, and
-                enhanced monitoring, directly impacting workforce management
-                efficiency.
-                <br />• Led the implementation of an identity and access
-                management system, enabling seamless integration between
-                multiple enterprise platforms with Single Sign-On (SSO). This
-                solution improved security, simplified authentication and
-                enhanced access control.
+                <strong>
+                  Software Engineer — Architecture Team | Grupo Nós
+                </strong>
+                <br />
+                <br />
+                • Designed and mapped API integrations and application
+                communication flows using Draw.io, ensuring standardized,
+                scalable, and maintainable system architectures.
+                <br />• Developed a real-time integration between Control ID and
+                Oracle Autonomous Data Warehouse (ADW) using PL/SQL, automating
+                employee time tracking, increasing data accuracy, and enhancing
+                operational efficiency across workforce management processes.
+                <br />• Contributed to the implementation of an enterprise-grade
+                Identity and Access Management (IAM) solution with Keycloak,
+                enabling seamless Single Sign-On (SSO) integration across
+                multiple platforms, strengthening system security, and improving
+                user authentication experiences.
+                <br />• Led the development of an internal integration
+                documentation platform, enhancing system reliability, promoting
+                knowledge sharing across cross-functional teams, and
+                accelerating onboarding for new developers.
               </Typography>
               <Typography>
-                Tecnologies used: ReactJs, NextJs, Typescript, JavaScript, Jest,
-                Cypress, Oracle Cloud, Oracle database, PL/SQL, HTML, CSS,
+                Technologies used: React.js, React Native, Next.js, Oracle DB,
+                PL/SQL, Keycloak, Node.js, TypeScript, draw.io, Figma HTML, CSS,
                 Docker, Material UI; Active experience with agile methodologies
                 (Scrum, Kanban, XP)
               </Typography>
