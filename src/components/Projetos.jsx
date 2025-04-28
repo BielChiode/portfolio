@@ -31,7 +31,7 @@ export default function Projetos() {
       descricao:
         "Rick and Morty Wiki is a web application built with React, TypeScript, and Vite that consumes the official Rick and Morty API to provide a comprehensive guide to the series. In the project, users can explore characters, discover locations, and browse episodes with detailed listings and information. The responsive interface features a futuristic style inspired by glassmorphism and subtle neon accents using the theme’s colors, showcasing integration with public APIs, performance optimization, and modern design with Material-UI.",
       link: "https://rick-and-morty-app-steel-six.vercel.app/",
-      height: 850,
+      height: 870,
     },
   ];
 
@@ -70,7 +70,6 @@ const CardStyled = ({ titulo, descricao, imagem, link, height }) => {
           <span className="green" />
         </div>
         <h1>{titulo}</h1>
-        <p>{descricao}</p>
         <Box sx={{ display: "flex" }}>
           <Typography
             sx={{
@@ -85,6 +84,7 @@ const CardStyled = ({ titulo, descricao, imagem, link, height }) => {
             <LaunchIcon sx={{ fontSize: 14, ml: 1 }} />
           </Typography>
         </Box>
+        <p>{descricao}</p>
       </div>
     </StyledWrapper>
   );
