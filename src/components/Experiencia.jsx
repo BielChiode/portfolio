@@ -23,6 +23,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function Experiencia() {
   const [openGrupoNos, setOpenGrupoNos] = useState(false);
   const [openPandora, setOpenPandora] = useState(false);
+  const [openCittati, setOpenCittati] = useState(false);
 
   return (
     <Box mt={4} id="experience">
@@ -30,6 +31,60 @@ export default function Experiencia() {
         Experience
       </Typography>
       <List>
+        {/* Cittati */}
+        <ListItem>
+          <Box sx={{ width: "100%", ":hover": { cursor: "pointer" } }}>
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              onClick={() => setOpenCittati(!openCittati)}
+            >
+              <Typography fontWeight={700} color="primary.contrastText">
+                Software Engineer — Mobile Team
+              </Typography>
+              <Box display="flex" alignItems="center">
+                <Typography>(May 2025 - Present)</Typography>
+                <IconButton
+                  size="small"
+                  sx={{
+                    transition: "transform 0.3s",
+                    transform: openCittati ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </Box>
+            </Box>
+            <Typography
+              sx={{
+                "&:hover": { color: "primary.main", cursor: "pointer" },
+                display: "inline-block",
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open("https://www.cittati.com.br/", "_blank");
+              }}
+            >
+              @Cittati
+            </Typography>
+            <Collapse in={openCittati} timeout="auto" unmountOnExit>
+              <Typography
+                sx={(theme) => ({ color: theme.palette.secondary.main, mt: 1 })}
+                gutterBottom
+              >
+                <strong>Software Engineer — Mobile Team</strong>
+                <br />
+                <br />
+              </Typography>
+              <Typography>
+                Technologies used: React.js, React Native, Next.js, Node.js,
+                TypeScript,Figma HTML, CSS, Docker, Material UI; Active
+                experience with agile methodologies (Scrum, Kanban, XP)
+              </Typography>
+            </Collapse>
+          </Box>
+        </ListItem>
+        <Divider />
         {/* Grupo Nós */}
         <ListItem>
           <Box sx={{ width: "100%", ":hover": { cursor: "pointer" } }}>
@@ -39,10 +94,10 @@ export default function Experiencia() {
               onClick={() => setOpenGrupoNos(!openGrupoNos)}
             >
               <Typography fontWeight={700} color="primary.contrastText">
-                Software Engineer
+                Software Engineer — Architecture Team
               </Typography>
               <Box display="flex" alignItems="center">
-                <Typography>(Nov 2024 - Present)</Typography>
+                <Typography>(Nov 2024 - May 2025)</Typography>
                 <IconButton
                   size="small"
                   sx={{
