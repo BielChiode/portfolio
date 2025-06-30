@@ -75,11 +75,22 @@ export default function Experiencia() {
                 <strong>Software Engineer — Mobile Team</strong>
                 <br />
                 <br />
+                • I developed an automation using Power Automate, Azure DevOps,
+                and Microsoft Teams to automatically notify the owners of
+                Features and User Stories whenever a new Issue is created and
+                linked to them. This solution eliminated the need for manual
+                tracking of child tasks, reduced developers' average response
+                time by 45%, and improved real-time backlog traceability.
+                <br />• Proactively introduced unit testing with Jest in a React
+                Native application that previously had no test coverage,
+                achieving ~30% coverage and strengthening code quality and
+                stability.
               </Typography>
               <Typography>
                 Technologies used: React.js, React Native, Next.js, Node.js,
-                TypeScript,Figma HTML, CSS, Docker, Material UI; Active
-                experience with agile methodologies (Scrum, Kanban, XP)
+                TypeScript, Figma, HTML, CSS, Docker, Material UI, Power
+                Automate, Azure DevOps, Microsoft Teams, Jest; Active experience
+                with agile methodologies (Scrum, Kanban, XP)
               </Typography>
             </Collapse>
           </Box>

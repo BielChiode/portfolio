@@ -30,7 +30,7 @@ const ScrollTecnologias = () => {
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     let animationFrame;
-    let speed = 1.5; // Velocidade do scroll
+    let speed = 1.4; // Velocidade do scroll
 
     const smoothScroll = () => {
       if (scrollContainer) {
