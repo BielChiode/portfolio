@@ -72,7 +72,7 @@ export default function Experiencia() {
                 sx={(theme) => ({ color: theme.palette.secondary.main, mt: 1 })}
                 gutterBottom
               >
-                <strong>Software Engineer — Mobile Team</strong>
+                <strong>Software Engineer — Mobile Team | Cittati</strong>
                 <br />
                 <br />
                 • I developed an automation using Power Automate, Azure DevOps,
