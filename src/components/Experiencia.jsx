@@ -83,7 +83,7 @@ export default function Experiencia() {
                 time by 45%, and improved real-time backlog traceability.
                 <br />• Proactively introduced unit testing with Jest in a React
                 Native application that previously had no test coverage,
-                achieving ~30% coverage and strengthening code quality and
+                achieving ~40% coverage and strengthening code quality and
                 stability.
               </Typography>
               <Typography>

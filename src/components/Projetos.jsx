@@ -31,7 +31,7 @@ export default function Projetos() {
       descricao:
         "Rick and Morty Wiki is a web application built with React, TypeScript, and Vite that consumes the official Rick and Morty API to provide a comprehensive guide to the series. In the project, users can explore characters, discover locations, and browse episodes with detailed listings and information. The responsive interface features a futuristic style inspired by glassmorphism and subtle neon accents using the theme’s colors, showcasing integration with public APIs, performance optimization, and modern design with Material-UI.",
       link: "https://rick-and-morty-app-steel-six.vercel.app/",
-      height: 870,
+      height: 920,
     },
   ];
 

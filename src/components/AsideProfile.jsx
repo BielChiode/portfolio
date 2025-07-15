@@ -132,7 +132,7 @@ export default function AsideProfile() {
           <Tooltip title="Linkedin" arrow>
             <StyledIconButton
               component="a"
-              href="https://www.linkedin.com/in/gabriel-chiode-589554157/"
+              href="https://www.linkedin.com/in/gabriel-vysomirskis-chiode-589554157/"
               target="_blank"
             >
               <LinkedInIcon fontSize="large" />
