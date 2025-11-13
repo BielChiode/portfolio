@@ -74,22 +74,34 @@ export default function Experiencia() {
               >
                 <strong>Software Engineer — Mobile Team | Cittati</strong>
                 <br />
+                Driving Urban Mobility Transformation Through Technology
                 <br />
-                • I developed an automation using Power Automate, Azure DevOps,
-                and Microsoft Teams to automatically notify the owners of
-                Features and User Stories whenever a new Issue is created and
-                linked to them. This solution eliminated the need for manual
-                tracking of child tasks, reduced developers' average response
-                time by 45%, and improved real-time backlog traceability.
-                <br />• Proactively introduced unit testing with Jest in a React
-                Native application that previously had no test coverage,
-                achieving ~40% coverage and strengthening code quality and
-                stability.
+                <br />
+                • Leadership in cross-platform mobile application development
+                using React Native and Expo. Managed the complete release cycle
+                on the Google Play Store and Apple App Store, and led projects
+                by defining the roadmap to ensure scalability and user
+                satisfaction.
+                <br />• Implemented a CI/CD pipeline for the project, ensuring
+                greater reliability, agility, and traceability.
+                <br /> • Built automations (Power Automate + Azure DevOps +
+                Teams) that reduced DEV–QA interaction time by 45%, increasing
+                backlog traceability and enhancing team collaboration.
+                <br /> • Implemented unit tests with Jest in React Native for a
+                project with no prior test coverage, achieving 50% coverage.
+                Utilized Generative AI (ChatGPT, Copilot) to generate and
+                validate automated tests, raising code quality and
+                maintainability.
+                <br /> • Actively participated in AI knowledge sharing
+                initiatives within Cittati's technology team, influencing
+                developers and providing guidance on leveraging AI to enhance
+                productivity. Delivered a presentation on AI applications to the
+                technology team.
               </Typography>
               <Typography>
                 Technologies used: React.js, React Native, Next.js, Node.js,
                 TypeScript, Figma, HTML, CSS, Docker, Material UI, Power
-                Automate, Azure DevOps, Microsoft Teams, Jest; Active experience
+                Automate, Azure DevOps, Microsoft Teams, Jest, Generative AI; Active experience
                 with agile methodologies (Scrum, Kanban, XP)
               </Typography>
             </Collapse>
