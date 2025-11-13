@@ -6,11 +6,11 @@ import styled from "styled-components";
 export default function Projetos() {
   const listaProjetos = [
     {
-      titulo: "Crypto Watchlist",
+      titulo: "Trade Journal",
       descricao:
-        "A web application for real-time cryptocurrency price monitoring using the Binance API. The project allows users to view quotes for different currencies in a user-friendly and responsive interface.",
-      link: "https://github.com/BielChiode/crypto-watchlist",
-      height: 500,
+        "Trade Journal Next is a modern Next.js-based application designed to help traders document and analyze their positions efficiently. With secure authentication, detailed trade logging, and analytical dashboards, it provides a streamlined experience for tracking performance, managing positions, and visualizing results through an intuitive interface.",
+      link: "https://trade-journal-next.vercel.app/",
+      height: 720,
     },
     {
       titulo: "Hit or Stand Game",
