@@ -77,32 +77,37 @@ export default function Experiencia() {
                 Driving Urban Mobility Transformation Through Technology
                 <br />
                 <br />
-                • Leadership in cross-platform mobile application development
-                using React Native and Expo. Managed the complete release cycle
-                on the Google Play Store and Apple App Store, and led projects
-                by defining the roadmap to ensure scalability and user
-                satisfaction.
-                <br />• Implemented a CI/CD pipeline for the project, ensuring
-                greater reliability, agility, and traceability.
-                <br /> • Built automations (Power Automate + Azure DevOps +
-                Teams) that reduced DEV–QA interaction time by 45%, increasing
-                backlog traceability and enhancing team collaboration.
-                <br /> • Implemented unit tests with Jest in React Native for a
-                project with no prior test coverage, achieving 50% coverage.
-                Utilized Generative AI (ChatGPT, Copilot) to generate and
-                validate automated tests, raising code quality and
+                • I created automations (Power Automate + Azure DevOps + Teams)
+                that reduced the time for interactions between DEV and QA by
+                45%, increasing traceability and collaboration in the workflow.
+                <br />
+                • I implemented a CI/CD pipeline in Azure DevOps for the
+                project, improving deployment and providing better traceability.
+                <br />
+                • Leadership in the development of cross-platform mobile
+                applications using React Native and Expo. Involvement in the
+                complete release cycle on the Google Play Store and Apple App
+                Store, and project leadership including roadmap definition to
+                ensure scalability and user satisfaction.
+                <br />
+                • I implemented unit tests with Jest in React Native in a
+                project lacking test coverage, achieving 50% coverage. I
+                utilized Generative AI (ChatGPT, Copilot) to generate and
+                validate automated tests, thereby elevating code quality and
                 maintainability.
-                <br /> • Actively participated in AI knowledge sharing
-                initiatives within Cittati's technology team, influencing
-                developers and providing guidance on leveraging AI to enhance
-                productivity. Delivered a presentation on AI applications to the
-                technology team.
+                <br />
+                • Delivered a presentation on AI applications to the technology
+                team: Actively participated in knowledge-sharing initiatives on
+                AI within the Cittati technology team, influencing developers
+                and providing guidance on how to leverage AI to enhance
+                productivity.
+                <br />
               </Typography>
               <Typography>
                 Technologies used: React.js, React Native, Next.js, Node.js,
                 TypeScript, Figma, HTML, CSS, Docker, Material UI, Power
-                Automate, Azure DevOps, Microsoft Teams, Jest, Generative AI; Active experience
-                with agile methodologies (Scrum, Kanban, XP)
+                Automate, Azure DevOps, Microsoft Teams, Jest, Generative AI;
+                Active experience with agile methodologies (Scrum, Kanban, XP)
               </Typography>
             </Collapse>
           </Box>
@@ -263,7 +268,7 @@ export default function Experiencia() {
                 agile methodologies (Scrum, Kanban, XP)
               </Typography>
               <Fade in={openPandora}>
-                <Box mt={2}>
+                <Box mt={4}>
                   <Typography fontWeight={700}>
                     Career Progression 🚀
                   </Typography>

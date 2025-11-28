@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Typography,
   Box,
@@ -8,6 +8,7 @@ import {
   styled,
   Tooltip,
   Avatar,
+  Modal,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -22,9 +23,14 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 }));
 
 export default function AsideProfile() {
+  const [openModal, setOpenModal] = useState(false);
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const handleOpenModal = () => setOpenModal(true);
+  const handleCloseModal = () => setOpenModal(false);
 
   return (
     <Container
@@ -49,15 +55,25 @@ export default function AsideProfile() {
         <Box display="flex" alignItems="center" mb={1}>
           <Avatar
             alt="Foto perfil"
-            src="foto-perfil.jpeg"
-            sx={{ mr: 2, width: 80, height: 80 }}
+            src="foto-perfil.png"
+            onClick={handleOpenModal}
+            sx={{
+              mr: 2,
+              width: 100,
+              height: 100,
+              cursor: "pointer",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
+            }}
           />
           <Typography variant="h4" color="primary.main">
             Gabriel V. Chiode
           </Typography>
         </Box>
         <Typography variant="h6" color="secondary.main" gutterBottom>
-          Frontend / Mobile Engineer
+          Software Engineer
         </Typography>
         <Typography sx={{ mt: 2, color: "text.primary" }}>
           I build intuitive, responsive and efficient user interfaces.
@@ -132,7 +148,7 @@ export default function AsideProfile() {
           <Tooltip title="Linkedin" arrow>
             <StyledIconButton
               component="a"
-              href="https://www.linkedin.com/in/gabriel-vysomirskis-chiode-589554157/"
+              href="https://www.linkedin.com/in/gabriel-chiode-589554157/"
               target="_blank"
             >
               <LinkedInIcon fontSize="large" />
@@ -140,6 +156,40 @@ export default function AsideProfile() {
           </Tooltip>
         </Box>
       </Paper>
+
+      <Modal
+        open={openModal}
+        onClose={handleCloseModal}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Box
+          onClick={handleCloseModal}
+          sx={{
+            position: "relative",
+            maxWidth: "90vw",
+            maxHeight: "90vh",
+            outline: "none",
+          }}
+        >
+          <Box
+            component="img"
+            src="foto-perfil.png"
+            alt="Foto perfil expandida"
+            sx={{
+              width: "auto",
+              height: "auto",
+              maxWidth: "100%",
+              maxHeight: "90vh",
+              borderRadius: 2,
+              boxShadow: "0px 0px 20px rgba(0, 173, 181, 0.5)",
+            }}
+          />
+        </Box>
+      </Modal>
     </Container>
   );
 }
